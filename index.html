@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Krispy Delights | Fresh donuts daily</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Main">
+    <div class="wrap">
+      <a class="logo" href="#top">Krispy Delights</a>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#story">How we make it</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+      <button class="pill" id="pauseBtn" type="button" aria-pressed="false">Pause motion</button>
+      <button class="cart" id="cart" type="button" aria-label="Your order">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v12H3zM3 8l3-4h12l3 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span class="count" id="count" hidden>0</span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Krispy Delights · Fresh from 7 a.m.</p>
+        <h1>
+          <span class="w" style="--i:0">Warm.</span>
+          <span class="w" style="--i:1">Bright.</span>
+          <span class="w" style="--i:2">Handmade</span>
+          <span class="w accent" style="--i:3">donuts.</span>
+        </h1>
+        <p class="lede">Krispy Delights makes soft, glossy doughnuts in small batches so every box feels like a little celebration.</p>
+        <div class="ctas">
+          <a class="btn" href="#menu">See the menu</a>
+          <a class="link" href="#story">Our story <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <svg class="shop" viewBox="0 0 600 380" role="img" aria-labelledby="shopTitle">
+        <title id="shopTitle">The Krispy Delights storefront</title>
+        <defs>
+          <pattern id="stripes" width="60" height="10" patternUnits="userSpaceOnUse">
+            <rect width="30" height="10" fill="#e21d2d"/><rect x="30" width="30" height="10" fill="#fff9f5"/>
+          </pattern>
+        </defs>
+        <rect x="410" y="20" width="40" height="70" fill="#b91326"/>
+        <g class="steam" fill="#ffffff">
+          <circle class="puff" cx="430" cy="12" r="11" style="--d:0s"/>
+          <circle class="puff" cx="430" cy="12" r="11" style="--d:1s"/>
+          <circle class="puff" cx="430" cy="12" r="11" style="--d:2s"/>
+        </g>
+        <rect x="70" y="80" width="460" height="280" rx="16" fill="#ffe4d6"/>
+        <rect x="56" y="70" width="488" height="24" rx="10" fill="#e21d2d"/>
+        <g class="sign">
+          <rect x="180" y="104" width="240" height="54" rx="27" fill="#fff9f5"/>
+          <text x="300" y="139" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="24" fill="#e21d2d">Krispy Delights</text>
+        </g>
+        <g class="awning">
+          <rect x="90" y="172" width="420" height="40" fill="url(#stripes)"/>
+          <path fill="url(#stripes)" d="M90 210a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0a15 15 0 0 0 30 0Z"/>
+        </g>
+        <rect x="100" y="240" width="160" height="100" rx="10" fill="#fff9f5" stroke="#b91326" stroke-width="5"/>
+        <rect x="270" y="236" width="80" height="124" rx="8" fill="#e21d2d" stroke="#b91326" stroke-width="5"/>
+        <circle cx="336" cy="300" r="5" fill="#ffe4d6"/>
+        <rect x="370" y="240" width="140" height="100" rx="10" fill="#fff9f5" stroke="#b91326" stroke-width="5"/>
+        <g class="mascot">
+          <ellipse cx="180" cy="312" rx="38" ry="24" fill="#d98a3f"/>
+          <ellipse cx="180" cy="304" rx="30" ry="14" fill="#f0b35d"/>
+          <circle class="eye" cx="168" cy="310" r="3.5" fill="#2c1d1b"/>
+          <circle class="eye" cx="192" cy="310" r="3.5" fill="#2c1d1b"/>
+          <path d="M172 320q8 7 16 0" fill="none" stroke="#2c1d1b" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <rect x="0" y="358" width="600" height="22" fill="#f7d6c7"/>
+      </svg>
+    </header>
+
+    <section class="band" id="menu" aria-labelledby="menuTitle">
+      <div class="wrap">
+        <h2 id="menuTitle">Today's favorites</h2>
+        <p class="lede">Four classic favorites and two seasonal specials are ready before the coffee cools.</p>
+        <div class="grid">
+          <article class="card reveal" style="--i:0" data-name="Classic Glazed">
+            <div class="art" aria-hidden="true">🍩</div>
+            <h3>Classic Glazed</h3>
+            <p>Soft, glossy, and kissed with a warm sugar finish.</p>
+            <div class="row"><span class="price">$3.50</span><button class="btn small add" type="button">Add to order</button></div>
+          </article>
+          <article class="card reveal" style="--i:1" data-name="Chocolate Sprinkle">
+            <div class="art" aria-hidden="true">🍩</div>
+            <h3>Chocolate Sprinkle</h3>
+            <p>Dark cocoa glaze with rainbow crunch on every edge.</p>
+            <div class="row"><span class="price">$3.85</span><button class="btn small add" type="button">Add to order</button></div>
+          </article>
+          <article class="card reveal" style="--i:2" data-name="Strawberry Frost">
+            <div class="art" aria-hidden="true">🍩</div>
+            <h3>Strawberry Frost</h3>
+            <p>Sweet pink icing with a bright berry sparkle finish.</p>
+            <div class="row"><span class="price">$3.90</span><button class="btn small add" type="button">Add to order</button></div>
+          </article>
+          <article class="card reveal" style="--i:0" data-name="Vanilla Bean">
+            <div class="art" aria-hidden="true">🍩</div>
+            <h3>Vanilla Bean</h3>
+            <p>Velvety vanilla glaze with a buttery, cloud-soft crumb.</p>
+            <div class="row"><span class="price">$3.95</span><button class="btn small add" type="button">Add to order</button></div>
+          </article>
+          <article class="card reveal" style="--i:1" data-name="Midnight Cocoa">
+            <div class="art" aria-hidden="true">🍩</div>
+            <h3>Midnight Cocoa</h3>
+            <p>Deep chocolate icing and a soft, bakery-fresh center.</p>
+            <div class="row"><span class="price">$4.10</span><button class="btn small add" type="button">Add to order</button></div>
+          </article>
+          <article class="card reveal" style="--i:2" data-name="Lemon Zest">
+            <div class="art" aria-hidden="true">🍩</div>
+            <h3>Lemon Zest</h3>
+            <p>Sunny citrus glaze with a crisp, bright finish.</p>
+            <div class="row"><span class="price">$3.80</span><button class="btn small add" type="button">Add to order</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band tint" id="story" aria-labelledby="storyTitle">
+      <div class="wrap">
+        <h2 id="storyTitle">How we make it</h2>
+        <div class="story">
+          <div class="stage" id="stage" data-step="mix" aria-hidden="true">
+            <svg viewBox="0 0 300 240">
+              <path class="bowl" d="M40 150Q150 260 260 150Z" fill="#c8dff1"/>
+              <ellipse class="dough" cx="150" cy="148" rx="70" ry="30" fill="#f5e1bd"/>
+            </svg>
+            <p class="stage-label" id="stageLabel">Mix</p>
+          </div>
+          <div class="steps">
+            <article class="step" data-step="mix"><h3>1. Mix</h3><p>We whisk yeast, flour, and warm sugar until the dough turns silky and happy.</p></article>
+            <article class="step" data-step="shape"><h3>2. Shape</h3><p>Every ring is hand-cut and gently formed before the fryer sings.</p></article>
+            <article class="step" data-step="rise"><h3>3. Proof</h3><p>The dough rests until it swells airy and light, ready for a golden finish.</p></article>
+            <article class="step" data-step="bake"><h3>4. Finish</h3><p>Fresh glaze, bright toppings, and a box packed still warm from the tray.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="zoom" id="zoom" aria-labelledby="zoomTitle">
+      <div class="zoom-stage">
+        <div class="zoom-art" aria-hidden="true">🍩</div>
+        <h2 id="zoomTitle">Our signature finish</h2>
+        <p class="zoom-text">Crisp edges, glossy glaze, and a little sparkle in every bite.</p>
+      </div>
+    </section>
+
+    <section class="band" id="visit" aria-labelledby="visitTitle">
+      <div class="wrap">
+        <h2 id="visitTitle">Come say hi</h2>
+        <p class="lede">125 Crimson Lane · Open every day, 7 a.m. to 3 p.m.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot"><div class="wrap"><p>Krispy Delights is a motion design project for ITE 270.</p></div></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+  <script src="motion-xray.js"></script>
+</body>
+</html>
